@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra số </title>
+</head>
+<body>
+    Enter Number = <input type="number" id="Nhập">
+    <button onclick="CheckNumBer()">Nhấn vào đây</button>
+    <p id="return"></p>
+    <script>
+        function CheckNumBer(){
+            var NumBer = document.getElementById('Nhập').value;
+            var Check;
+            if(NumBer==0){
+                Check='Số 0';
+            }
+            if(NumBer>0){
+                Check='Là số nguyên dương';
+            }
+            if(NumBer<0){
+                Check='Là số nguyên âm';
+            }
+            document.getElementById('return').innerHTML=Check;
+        }
+    </script>
+</body>
+</html>

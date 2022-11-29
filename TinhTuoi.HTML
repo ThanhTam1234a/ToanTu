@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinhTuoi</title>
+</head>
+<body>
+    <button type="button" onclick="TinhTuoi()">Tính tuổi</button>
+    <script>
+        function TinhTuoi()
+        {
+            var D = new Date();
+            var DateOfBirth=prompt('Nhập ngày sinh của bạn: ',0);
+            var MonthOfBirth=prompt('Nhập tháng sinh của bạn: ',0);
+            var YearOfBirth=prompt('Nhập năm sinh của bạn: ',0); 
+            var ngay_thu = D.getDay();
+            var SoTuoi = D.getFullYear()-YearOfBirth;
+            alert('Hiện tại ban '+SoTuoi+' tuoi và sinh vào thứ'+ngay_thu);   
+        }
+        
+    </script>
+</body>
+</html>

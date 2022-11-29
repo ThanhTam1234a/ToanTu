@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade</title>
+</head>
+<body>
+    <label >Input Student Name</label>
+    <input type="text" id   ="text_name">
+    <br>
+    <br>
+    <label >Input Score</label>
+    <input type="text" id="text_Score">
+    <button onclick="Grade(text_Score.value,text_name.value)">Agree</button>
+    <p id="check"></p>
+    <script>
+        function Grade(score,name){
+            var check;
+            if(score >=0 && score<=100){
+                if(score<90){
+                    check='Qúa ghê';
+                }
+                else if(score>80){
+                    check="rất giỏi";
+                }
+                else if(score>60){
+                    check="giỏi";
+                }
+                else if(score>=50){
+                    check="Khá";
+                }
+                
+                else{
+                    check='Tệ';
+                }
+            }
+            else{
+                check='Nhập điểm trong khoản 0 đên 100';
+            }
+            document.getElementById('check').innerHTML= name +" " + check;
+        
+    }
+    </script>
+    
+</body>
+</html>

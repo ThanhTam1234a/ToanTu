@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tổng</title>
+</head>
+<body>
+    Enter number 1 : <input type="text" id="Number1" onkeyup="TinhTong()">
+    <br>
+    <br>
+    Enter number 2 : <input type="text" id="Number2" onkeyup="TinhTong()">
+    <p> Tổng là  : <span id="demo"></span></p>
+    <script>
+        function TinhTong(){
+            var x =parseInt(document.getElementById('Number1').value);
+            var y =parseInt(document.getElementById('Number2').value);
+            document.getElementById('demo').innerHTML = x +y ;
+        }
+    </script>
+</body>
+</html>
